@@ -16,6 +16,3 @@ Contributors names and contact info
 Michael Hudson
 Solution Architect
 michael.hudson@ey.com
-
-
-
