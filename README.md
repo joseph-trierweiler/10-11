@@ -16,3 +16,7 @@ Contributors names and contact info
 Michael Hudson
 Solution Architect
 michael.hudson@ey.com
+
+Divyashree Srinivasa
+Frontend Developer (Instructor)
+divya.srinivasa@ey.com
