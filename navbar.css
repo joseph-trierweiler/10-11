@@ -5,23 +5,34 @@
 
 a {
     text-decoration: none;
+    font-family: 'infer';
+   
 }
 
 nav {
     display: flex;
     align-items: center;
-    font-family: 'inter','Courier New', Courier, monospace;
-    border-top: 5px solid #fbf9f2;
+    border-top: 5px solid #fbc501;
     box-shadow: 0px 5px 5px rgba(0, 0, 0, .2);  
-    padding: 5px 15px 5px 15px
+    padding: 5px 15px 5px 15px;
+
 }
 
-#navbar-right {
+.nav-links {
+    margin-right: 75px;
+}
+
+#nav-logo {
+    margin-right: 75px
+}
+
+#nav-right {
 margin-left: auto }
 
-#sign-up {
-    background-color: #edba03;
-    padding: 8px;
+#order-btn {
+    background-color: #fbc501;
+    padding: 10px;
     border-radius: 20px;
     border: none;
+    margin-left: 50px
 }
