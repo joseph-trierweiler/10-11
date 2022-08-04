@@ -20,3 +20,7 @@ michael.hudson@ey.com
 Divyashree Srinivasa
 Frontend Developer (Instructor)
 divya.srinivasa@ey.com
+
+Michael Greene
+Frontend Developer / Staff Assistant
+michael.greene2@ey.com
