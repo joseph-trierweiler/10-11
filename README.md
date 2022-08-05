@@ -24,3 +24,7 @@ divya.srinivasa@ey.com
 Michael Greene
 Frontend Developer / Staff Assistant
 michael.greene2@ey.com
+
+D'Andre Turner
+Frontend Developer / Staff Assistant
+DAndre.Turner@ey.com
