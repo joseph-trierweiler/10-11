@@ -25,6 +25,10 @@ Michael Greene
 Frontend Developer / Staff Assistant
 michael.greene2@ey.com
 
+Darrielle Evans
+Frontend Developer / Staff Assistant
+darrielle.evans@ey.com
+
 Charmaine Stegall
 Frontend Developer
 charmaine.stegall@ey.com
