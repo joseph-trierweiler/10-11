@@ -28,3 +28,11 @@ michael.greene2@ey.com
 D'Andre Turner
 Frontend Developer / Staff Assistant
 DAndre.Turner@ey.com
+
+Darrielle Evans
+Frontend Developer / Staff Assistant
+darrielle.evans@ey.com
+
+Charmaine Stegall
+Frontend Developer
+charmaine.stegall@ey.com
