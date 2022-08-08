@@ -1,0 +1,50 @@
+
+.app_header {
+    text-align: center;
+    font-size: 3em;
+    font-family: 'Inter';
+    padding: 20px;
+}
+
+.wrapper{
+    margin: 0 auto;
+    width: 97%;
+    box-sizing: border-box;
+    
+}
+
+.cards{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
+    grid-gap: 3em;
+    font-family: 'Inter';
+}
+.card {
+    box-shadow: 0 0 3px rgba(0,0,0,0.5);
+    background: #FBF9F2;
+    
+}
+
+.card_image {
+    width: 100%;
+    display: block;
+}
+
+.card_title {
+    font-weight:bold;
+    font-size: 1em;
+    margin: 10px
+
+}
+.card_description {
+    font-size: 0.7em;
+    margin: 10px
+
+}
+
+.card_price {
+    font-weight:bold;
+    font-size: 0.7em;
+    margin: 10px;
+    padding-bottom: 5px;
+}
