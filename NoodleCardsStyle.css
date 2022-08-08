@@ -1,25 +1,25 @@
-h2 {
+.sectionTitle {
     text-align: center;
     font-size: xx-large;
     font-weight: bold;
     font-family: 'Inter', sans-serif;
 }
 
-h3 {
+.NoodleName {
     text-align: left;
     font-size: x-large;
     font-weight: bold;
     font-family: 'Inter', sans-serif;
 }
 
-h4 {
+.price {
     text-align: left;
     font-size: small;
     font-weight: bold;
     font-family: 'Inter', sans-serif;
 }
 
-p {
+.foodDesc {
 	text-align: left;
 	height: 75px;
     font-size: large;
