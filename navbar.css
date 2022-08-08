@@ -48,3 +48,8 @@ nav {
 #nav-right {
   margin-left: auto;
 }
+
+@media screen and (max-width: 860px) {
+  nav {
+  }
+}
