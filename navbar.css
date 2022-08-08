@@ -18,6 +18,12 @@ nav {
   background-color: #fbf9f2;
 }
 
+#nav-entry {
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+
 .nav-links {
   flex: 1;
 }
@@ -31,14 +37,14 @@ nav {
   margin-right: 4%;
 }
 
-#nav-right {
-  flex: 1;
-}
-
 #nav-order-btn {
   background-color: #fbc501;
   padding: 10px;
   border-radius: 20px;
   border: none;
   margin-left: 25px;
+}
+
+#nav-right {
+  margin-left: auto;
 }
