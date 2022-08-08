@@ -19,24 +19,23 @@ nav {
 }
 
 .nav-links {
-  /* flex: grow shrink basis */
-  flex: 0 0 50%;
+  flex: 1;
 }
 
 #nav-links-container {
   display: flex;
+  flex: 1;
 }
 
 #nav-logo {
-  margin-right: 5%;
+  margin-right: 4%;
 }
 
 #nav-right {
-  align-items: center;
-  margin-left: auto;
+  flex: 1;
 }
 
-#order-btn {
+#nav-order-btn {
   background-color: #fbc501;
   padding: 10px;
   border-radius: 20px;
