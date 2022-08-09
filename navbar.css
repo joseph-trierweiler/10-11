@@ -51,5 +51,6 @@ nav {
 
 @media screen and (max-width: 860px) {
   nav {
+    font-size: 75%;
   }
 }
