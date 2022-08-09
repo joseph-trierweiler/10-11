@@ -5,20 +5,32 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Order Page</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap');
+    </style>
+    <link rel="stylesheet" href="/OrderPage.css"
 </head>
 <body>
-    <div>
-        <img src="resources/background_noodle.png" alt="A bowl of ramen noodles">
-    </div>
-    <div>
+    <div class="container">
 
-        <button>Pickup</button>
-        <button>Delivery</button>
+        <div class="BackgroundNoodle LeftColmn">
+            <img src="resources/background_noodle.png" alt="A bowl of ramen noodles">
+        </div>
 
-    </div>
-    <div>
-      <p>Pickup at a location near you:</p>
-      <input type="text" placeholder="Enter City, State, or Zip">
+        <div class="OrderInfo RightColmn">
+
+            <div class="OrderBtns">
+                <button class="PickupBtn">Pickup</button>
+                <button class="DeliveryBtn">Delivery</button>
+            </div>
+
+            <div class="LocationInfo">
+                <label for="CityStateZip">Pickup at a location near you:</label>
+                <input id="CityStateZip" type="text" placeholder="Enter City, State, or Zip">
+            </div>
+
+        </div>
+
     </div>
 </body>
 </html>

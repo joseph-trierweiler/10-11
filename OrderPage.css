@@ -1,4 +1,89 @@
 *{
     margin: 0;
     padding: 0;
+    font-family: 'Inter', sans-serif;
+    background-color: #FBF9F2;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+}
+.LeftColmn {
+    width: 55%;
+}
+
+.RightColmn {
+    width: 45%;
+}
+
+.BackgroundNoodle img{
+    width: 100%;
+}
+
+.OrderInfo {
+    margin: 15% 0;
+}
+
+.OrderBtns {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    /* border: solid red 1px; */
+} 
+
+.PickupBtn {
+    background-color: rgb(250, 156, 74);
+    width: 35%;
+    height: 70px;
+    margin: 6px;
+    padding: 10px;
+    font-size: 23px;
+    color: rgb(4, 4, 63);
+    border: none;
+    border-radius: 35px;
+    
+}
+
+.DeliveryBtn {
+    background-color: rgb(252, 184, 124);
+    width: 35%;
+    height: 70px;
+    margin: 6px;
+    padding: 10px;
+    font-size: 23px;
+    color: rgb(4, 4, 63);
+    border: none;
+    border-radius: 35px;
+}
+
+.LocationInfo {
+    display: grid;
+    grid-row: 1 / span 2;
+    padding: 10px;
+    margin: 60px 0px 0px 70px;
+    font-size: 23px;
+    /* border: solid red 1px; */
+}
+
+.LocationInfo input{
+    margin: 10px 0;
+    width: 90%;
+    padding: 10px 0;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #000000;
+}
+
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    font-size: 23px;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    font-size: 23px;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+    font-size: 23px;
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    font-size: 23px;
 }
