@@ -36,9 +36,9 @@ nav {
   /* flex-wrap: wrap; */
 }
 
-.nav-links {
-  /* flex: 1 1 50px; */
-}
+/* .nav-links {
+  flex: 1 1 50px; 
+} */
 
 #nav-links-container {
   display: flex;
@@ -57,6 +57,7 @@ nav {
   border-radius: 20px;
   border: none;
   align-self: center;
+  margin-left: 15px;
 }
 
 #nav-right {
@@ -64,13 +65,13 @@ nav {
   white-space: nowrap;
 }
 
-@media screen and (min-width: 682px) {
+@media screen and (min-width: 710px) {
   #dropdown-container {
     display: none;
   }
 }
 
-@media screen and (max-width: 681px) {
+@media screen and (max-width: 709px) {
   .nav-menu-icon {
     position: relative;
     display: flex;
