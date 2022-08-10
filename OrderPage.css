@@ -87,3 +87,9 @@
 :-ms-input-placeholder { /* Internet Explorer 10-11 */
     font-size: 23px;
 }
+
+@media screen and (max-width: 1300px) {
+    .BackgroundNoodle img{
+        height: 100vh;
+    }
+}
