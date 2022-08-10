@@ -37,7 +37,7 @@ nav {
 }
 
 .nav-links {
-  flex: 1 1 50px;
+  /* flex: 1 1 50px; */
 }
 
 #nav-links-container {
@@ -45,12 +45,6 @@ nav {
   flex: 1;
   flex-wrap: wrap;
   gap: 10%;
-}
-
-@media screen and (min-width: 661px) {
-  #dropdown-container {
-    display: none;
-  }
 }
 
 #nav-logo {
@@ -70,7 +64,13 @@ nav {
   white-space: nowrap;
 }
 
-@media screen and (max-width: 660px) {
+@media screen and (min-width: 682px) {
+  #dropdown-container {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 681px) {
   .nav-menu-icon {
     position: relative;
     display: flex;
