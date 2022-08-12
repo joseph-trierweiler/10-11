@@ -147,12 +147,12 @@ nav {
 }
 
 /*Highlight CSS*/
-.active::after {
-  position: absolute;
+.active {
+  border-bottom: 5px solid darkorange;
+  padding: 4px;
   content: "";
-  height: 3px;
-  width: 100%;
-
   left: 0;
   bottom: -7px;
+  text-decoration: none;
+  color: inherit;
 }

@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="../css/navbar.css" />
     <link rel="stylesheet" href="../css/rewards.css" />
     <link rel="stylesheet" href="../css/OrderPage.css" />
+    <link rel="stylesheet" href="../css/loginstyle.css">
 
     <script defer src="../JS/navbar.js"></script>
   </head>
@@ -32,9 +33,8 @@
       </span>
 
       <span id="nav-entry">
-        <span id="nav-right"
-          ><a class="nav-links" href="#">Log In</a> |
-          <a class="nav-links" href="#">Sign Up</a>
+        <span id="nav-right">
+        <button id="logInPage" class="LoginBtn">Log In | Sign Up</button>
         <button id="OrderNowBtn" class="nav-order-btn">Order Now</button>
       </span>
     </nav>
@@ -71,6 +71,47 @@
       </div>
     </div>
 
+    <!-- login page modal html -->
+    <div class="logInModal_container" id="loginModal_container">
+      <div class="loginModal">
+          <div class="login leftcolmn">
+              <div class="loginText">
+                      <h1>Log In to Your Account</h1>
+                      <p>Login using social networks</p>
+                  <div class="social-container">
+                      <a href="#" class="google-social">
+                          <img src="../Resources/images/google-plus.png" alt="google-logo"></i>
+                      </a>
+
+                      <a href="#" class="facebook-social">
+                          <img src="../Resources/images/facebook.png" alt="facebook-logo"></img>
+                      </a>
+                  </div>
+              </div>
+              <form class="form" action="#">
+                  <input type="email" name="email" placeholder="Email">
+                          <input type="password" name="pswd" placeholder="Password">
+                          <button class="login-btn">Log In</button>
+                          <p><a href="#">Forget Password?</a>
+                          Don't have an account?
+                          <a href="#">Sign up</a></p>
+              </form>
+          </div>
+
+          <div class="signup rightcolmn">
+              <div class="closeMeBtn">
+
+                  <span id="closeModalBtn" class="closeModalBtn">&times;</span>
+
+              </div>
+              <h1>New Here?</h1>
+              <p>Order ahead and let's eat!</p>
+              <button class="Sign-up-btn">Sign Up</button>
+
+               
+          </div>
+      </div>
+  </div>
 
           <!--hamburger dropdown  -->
     <span id="dropdown-container"> 

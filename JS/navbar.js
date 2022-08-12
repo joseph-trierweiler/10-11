@@ -14,13 +14,13 @@ menuBtn.addEventListener("click", () => {
     dropdown.style.display = "none";
   }
 });
-
-const currentLocation = location.href;
-const menuItem = document.querySelectorAll("a");
-const menuLength = menuItem.length;
-for (let i = 0; i < menuLength; i++) {
-  if (menuItem[i].href === currentLocation) {
-    menuItem[i].className = "active";
+// highlight js
+const currentWindow = location.href;
+const NavItem = document.querySelectorAll("a");
+const navItemLength = NavItem.length;
+for (let i = 0; i < navItemLength; i++) {
+  if (NavItem[i].href === currentWindow) {
+    NavItem[i].className = "active";
   }
 }
 
@@ -40,3 +40,17 @@ CloseOrderModal.addEventListener("click", () => {
 });
 
 // login JS
+
+const loginModal = document.getElementById("logInPage");
+
+const loginContainerModal = document.getElementById("loginModal_container");
+
+const closeLoginModal = document.getElementById("closeModalBtn");
+
+loginModal.addEventListener("click", () => {
+  loginContainerModal.classList.add("showLoginModal");
+});
+
+closeLoginModal.addEventListener("click", () => {
+  loginContainerModal.classList.remove("showLoginModal");
+});
