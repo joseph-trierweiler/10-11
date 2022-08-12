@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="loginstyle.css">
+    <script src="https://kit.fontawesome.com/0eb62803fa.js" crossorigin="anonymous"></script>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;600&display=swap');
+    </style>
+
+</head>
+<body>
+    <button id="logInPage" class="LoginBtn">Log In</button>
+    <!-- <button class="closeMeBtn" id="close" onclick="closeModal()">Close me</button> -->
+
+    <div class="logInModal_container" id="loginModal_container">
+        <div class="loginModal">
+            <div class="login leftcolmn">
+                <div class="loginText">
+                        <h1>Log In to Your Account</h1>
+                        <p>Login using social networks</p>
+                    <div class="social-container">
+                        <a href="#" class="google-social">
+                            <img src="google-plus.png" alt="google-logo"></i>
+                        </a>
+
+                        <a href="#" class="facebook-social">
+                            <img src="facebook.png" alt="facebook-logo"></img>
+                        </a>
+                    </div>
+                </div>
+                <form class="form" action="#">
+                    <input type="email" name="email" placeholder="Email">
+                            <input type="password" name="pswd" placeholder="Password">
+                            <button class="login-btn">Log In</button>
+                            <p><a href="#">Forget Password?</a>
+                            Don't have an account?
+                            <a href="#">Sign up</a></p>
+                </form>
+            </div>
+
+            <div class="signup rightcolmn">
+                <div class="closeMeBtn">
+
+                    <span id="closeModalBtn" class="closeModalBtn">&times;</span>
+
+                </div>
+                <h1>New Here?</h1>
+                <p>Order ahead and let's eat!</p>
+                <button class="Sign-up-btn">Sign Up</button>
+
+                 
+            </div>
+        </div>
+    </div>
+    <script src="script.js" defer></script>
+</body>
+</html>
