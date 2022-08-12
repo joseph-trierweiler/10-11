@@ -1,15 +1,4 @@
-/*const open = document.getElementById('open');
-const modal_container = document.getElementById('modal_container');
-const close = document.getElementById('close');
 
-open.addEventListener('click', () => {
-    modal_container.classList.add('show');
-});
-
-close.addEventListener('click', () => {
-    modal_container.classList.remove('show')
-});
-*/
 
 // grab order now button from DOM
 
@@ -42,15 +31,3 @@ closeLoginModal.addEventListener('click', () => {
     loginContainerModal.classList.remove('showLoginModal');
 
 });
-
-
-
-// let showModal = () => {
-
-//      document.getElementById('loginModal_container').classList.add("showLoginModal");
-
-// }
-
-// let closeModal = () => {
-//     document.getElementById('loginModal_container').classList.remove("closeLoginModal");
-// }
