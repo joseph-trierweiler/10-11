@@ -8,29 +8,35 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap');
     </style>
-    <link rel="stylesheet" href="/OrderPage.css"
+    <link rel="stylesheet" href="/OrderPage.css">
+    <script src="OrderPage.js"></script>
 </head>
 <body>
-    <div class="container">
+    <button id="OrderNow" class="OrderNow" onclick="showModal()">Order Now</button>
+        <div id ="modalContainer" class="orderNow-modal-container">
+            <div class="orderNow-modal">
+                <div class="BackgroundNoodle LeftColmn">
+                    <img src="resources/background_noodle.png" alt="A bowl of ramen noodles">
+                </div>
 
-        <div class="BackgroundNoodle LeftColmn">
-            <img src="resources/background_noodle.png" alt="A bowl of ramen noodles">
-        </div>
+                <div class="OrderInfo RightColmn">
+                    <div class="closeBtnDiv">
+                        <span class="CloseBtn" onclick="hideModal()">&times;</span>
+                    </div>
 
-        <div class="OrderInfo RightColmn">
+                    <div class="OrderBtns">
+                        <button class="PickupBtn">Pickup</button>
+                        <button class="DeliveryBtn">Delivery</button>
+                    </div>
 
-            <div class="OrderBtns">
-                <button class="PickupBtn">Pickup</button>
-                <button class="DeliveryBtn">Delivery</button>
+                    <div class="LocationInfo">
+                        <label for="CityStateZip">Pickup at a location near you:</label>
+                        <input id="CityStateZip" type="text" placeholder="Enter City, State, or Zip">
+                    </div>
+
+                </div>
             </div>
 
-            <div class="LocationInfo">
-                <label for="CityStateZip">Pickup at a location near you:</label>
-                <input id="CityStateZip" type="text" placeholder="Enter City, State, or Zip">
-            </div>
-
         </div>
-
-    </div>
 </body>
 </html>
