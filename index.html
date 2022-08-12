@@ -10,22 +10,22 @@
     <style>
       @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800;900&display=swap");
     </style>
-    <link rel="stylesheet" href="./style.css" />
-    <link rel="stylesheet" href="navbar.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/navbar.css" />
 
-    <script defer src="navbar.js"></script>
+    <script defer src="./JS/navbar.js"></script>
   </head>
 
-  <body>
+  <body class="body-container">
     <nav>
-      <span id="nav-logo"><img src="Logo.svg" /></span>
+      <span id="nav-logo"><img src="Resources/images/Logo.svg" /></span>
 
       <span id="nav-links-container">
-        <a class="nav-links" href="">Menu</a>
-        <a class="nav-links" href="">Rewards</a>
-        <a class="nav-links" href="">Locations</a>
-        <a class="nav-links" href="">Careers</a>
-        <a class="nav-links" href="">About Us</a>
+        <a class="nav-links" href="index.html">Menu</a>
+        <a class="nav-links" href="Html/rewards.html">Rewards</a>
+        <a class="nav-links" href="#">Locations</a>
+        <a class="nav-links" href="#">Careers</a>
+        <a class="nav-links" href="#">About Us</a>
       </span>
 
       <span class="nav-menu-icon">
@@ -34,8 +34,11 @@
 
       <span id="nav-entry">
         <span id="nav-right"
-          ><a href="">Log In</a> | <a href="">Sign Up</a>
-          <button id="nav-order-btn"><a href="">Order Now</a></button></span
+          ><a class="nav-links" href="#">Log In</a> |
+          <a class="nav-links" href="#">Sign Up</a>
+          <button id="nav-order-btn">
+            <a class="nav-links" href="#">Order Now</a>
+          </button></span
         >
       </span>
     </nav>
@@ -44,7 +47,7 @@
       <h2 class="section_title">Appetizers</h2>
       <div class="cards">
         <div class="card">
-          <img src="./images/Takoyaki.png" class="app_image" />
+          <img src="Resources/images/Takoyaki.png" class="app_image" />
           <div class="card_box">
             <h3 class="card_title">Takoyaki</h3>
             <div class="card_description">
@@ -54,7 +57,7 @@
           </div>
         </div>
         <div class="card">
-          <img src="./images/Edamame.png" class="app_image" />
+          <img src="Resources/images/Edamame.png" class="app_image" />
           <div class="card_box">
             <h3 class="card_title">Edamame</h3>
             <div class="card_description">
@@ -64,7 +67,7 @@
           </div>
         </div>
         <div class="card">
-          <img src="./images/Corn.png" class="app_image" />
+          <img src="Resources/images/Corn.png" class="app_image" />
           <div class="card_box">
             <h3 class="card_title">Corn Tempura</h3>
             <div class="card_description">
@@ -79,7 +82,7 @@
       <h2 class="section_title">Udon Noodles</h2>
       <div class="cards">
         <div class="card">
-          <img src="./images/Udon1.png" class="main_image" />
+          <img src="Resources/images/Udon1.png" class="app_image" />
           <div class="card_box">
             <h3 class="card_title">Tonkatsu Udon</h3>
             <div class="card_description">
@@ -91,7 +94,7 @@
         </div>
 
         <div class="card">
-          <img src="./images/Udon2.png" class="main_image" />
+          <img src="Resources/images/Udon2.png" class="app_image" />
           <div class="card_box">
             <h3 class="card_title">Salmon Spinach Cream Udon</h3>
             <div class="card_description">
@@ -103,7 +106,7 @@
         </div>
 
         <div class="card">
-          <img src="./images/Udon3.png" class="main_image" />
+          <img src="Resources/images/Udon3.png" class="app_image" />
           <div class="card_box">
             <h3 class="card_title">Spicy Niku Bukkake Udon</h3>
             <div class="card_description">
