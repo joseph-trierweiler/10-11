@@ -8,16 +8,51 @@
     display: none;
 }
 
-.container{
-    display: flex;
-    flex-direction: row;
+button {
+    background-color: #23314E;
+    border-radius: 5px;
+    color: #FBF9F2;
+    padding: 10px 25px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    font-size: 14px;
 }
 
+.closeMeBtn{
+    justify-content: right;
+    padding-left: 350px;
+    cursor: default;
+    font-size: 30px;
+}
+
+.logInModal_container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    opacity: 0;
+    pointer-events: none;
+}
+
+
+.loginModal{
+    display: flex;
+    flex-direction: row;
+    width: 1200px;
+    max-width: 100%;
+}
+
+.showLoginModal{
+    opacity: 1;
+    pointer-events: auto;
+}
 
 .leftcolmn{
     width: 65%;
     background-color: #FBF9F2;
     height: 100vh;
+    display: flex;
 }
 
 
