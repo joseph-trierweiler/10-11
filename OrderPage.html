@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Page</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap');
+    </style>
+    <link rel="stylesheet" href="/OrderPage.css">
+    <script src="OrderPage.js" defer></script>
+</head>
+<body>
+    <button id="OrderNowBtn" class="OrderNow">Order Now</button>
+        <div id ="OrderModalContainer" class="orderNow-modal-container">
+            <div class="orderNow-modal">
+                <div class="BackgroundNoodle LeftColmn">
+                    <img src="resources/background_noodle.png" alt="A bowl of ramen noodles">
+                </div>
+
+                <div class="OrderInfo RightColmn">
+                    <div class="closeBtnDiv">
+                        <span id="CloseOrderBtn" class="CloseBtn">&times;</span>
+                    </div>
+
+                    <div class="OrderBtns">
+                        <button class="PickupBtn">Pickup</button>
+                        <button class="DeliveryBtn">Delivery</button>
+                    </div>
+
+                    <div class="LocationInfo">
+                        <label for="CityStateZip">Pickup at a location near you:</label>
+                        <input id="CityStateZip" type="text" placeholder="Enter City, State, or Zip">
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+</body>
+</html>
