@@ -1,12 +1,11 @@
-console.log("Is this thing on??")
+const OpenOrderModal = document.getElementById("OrderNowBtn");
+const OrderModal = document.getElementById("OrderModalContainer");
+const CloseOrderModal = document.getElementById("CloseOrderBtn");
 
-var orderNowBtn = document.getElementById("OrderNow");
+OpenOrderModal.addEventListener('click', () => {
+    OrderModal.classList.add('showOrderNowModal');
+});
 
-let showModal = () => {
-     document.getElementById('modalContainer').classList.add("showOrderNowModal");
-}
- let hideModal = () => {
-    document.getElementById('modalContainer').classList.remove("showOrderNowModal");
- }
-
-
+CloseOrderModal.addEventListener('click', () => {
+    OrderModal.classList.remove('showOrderNowModal');
+});
