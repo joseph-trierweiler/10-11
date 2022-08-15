@@ -11,6 +11,8 @@
     />
     <link rel="stylesheet" href="../css/navbar.css" />
     <link rel="stylesheet" href="../css/rewards.css" />
+    <link rel="stylesheet" href="../css/OrderPage.css" />
+    <link rel="stylesheet" href="../css/loginstyle.css">
 
     <script defer src="../JS/navbar.js"></script>
   </head>
@@ -31,16 +33,104 @@
       </span>
 
       <span id="nav-entry">
-        <span id="nav-right"
-          ><a class="nav-links" href="#">Log In</a> |
-          <a class="nav-links" href="#">Sign Up</a>
-          <button id="nav-order-btn">
-            <a class="nav-links" href="#">Order Now</a>
-          </button></span
-        >
+        <span id="nav-right">
+        <button id="logInPage" class="LoginBtn">Log In | Sign Up</button>
+        <button id="OrderNowBtn" class="nav-order-btn">Order Now</button>
       </span>
     </nav>
-    <span id="dropdown-container"> </span>
+
+    <!-- modal html -->
+    <div id="OrderModalContainer" class="orderNow-modal-container">
+      <div class="orderNow-modal">
+        <div class="BackgroundNoodle LeftColmn">
+          <img
+            src="../Resources/images/background_noodle.png"
+            alt="A bowl of ramen noodles"
+          />
+        </div>
+
+        <div class="OrderInfo RightColmn">
+          <div class="closeBtnDiv">
+            <span id="CloseOrderBtn" class="CloseBtn">&times;</span>
+          </div>
+
+          <div class="OrderBtns">
+            <button class="PickupBtn">Pickup</button>
+            <button class="DeliveryBtn">Delivery</button>
+          </div>
+
+          <div class="LocationInfo">
+            <label for="CityStateZip">Pickup at a location near you:</label>
+            <input
+              id="CityStateZip"
+              type="text"
+              placeholder="Enter City, State, or Zip"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- login page modal html -->
+    <div class="logInModal_container" id="loginModal_container">
+      <div class="loginModal">
+          <div class="login leftcolmn">
+              <div class="loginText">
+                      <h1>Log In to Your Account</h1>
+                      <p>Login using social networks</p>
+                  <div class="social-container">
+                      <a href="#" class="google-social">
+                          <img src="../Resources/images/google-plus.png" alt="google-logo"></i>
+                      </a>
+
+                      <a href="#" class="facebook-social">
+                          <img src="../Resources/images/facebook.png" alt="facebook-logo"></img>
+                      </a>
+                  </div>
+              </div>
+              <form class="form" action="#">
+                  <input type="email" name="email" placeholder="Email">
+                          <input type="password" name="pswd" placeholder="Password">
+                          <button class="login-btn">Log In</button>
+                          <p><a href="#">Forget Password?</a>
+                          Don't have an account?
+                          <a href="#">Sign up</a></p>
+              </form>
+          </div>
+
+          <div class="signup rightcolmn">
+              <div class="closeMeBtn">
+
+                  <span id="closeModalBtn" class="closeModalBtn">&times;</span>
+
+              </div>
+              <h1>New Here?</h1>
+              <p>Order ahead and let's eat!</p>
+              <button class="Sign-up-btn">Sign Up</button>
+
+               
+          </div>
+      </div>
+  </div>
+
+          <!--hamburger dropdown  -->
+    <span id="dropdown-container"> 
+      <span id="nav-links-container-dropdown"> 
+        <div><a class="nav-links" href="../index.html">Menu</a></div>
+        <div><a class="nav-links" href="Html/rewards.html">Rewards</a></div>
+        <div><a class="nav-links" href="">Locations</a></div>
+        <div><a class="nav-links" href="">Careers</a></div>
+        <div><a class="nav-links" href="">About Us</a></div>
+        <hr id="dropdown-line" />
+        <div><a class="nav-links" href="">Login</a></div>
+        <div><a class="nav-links" href="">Sign Up</a></div>
+        <div class="nav-links">&nbsp;</div>
+        <div><a id="nav-order-btn-dropdown" href="">Order Now</a></div>
+        </span>
+    </span>
+    </span>
+
+    <!-- dynamic cards -->
     <div class="description">
       <div class="description-text-box">
         <div class="description-text">
