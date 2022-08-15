@@ -149,7 +149,6 @@ nav {
 /*Highlight CSS*/
 .active {
   border-bottom: 5px solid darkorange;
-  padding: 4px;
   content: "";
   left: 0;
   bottom: -7px;
