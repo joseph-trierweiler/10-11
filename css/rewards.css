@@ -35,3 +35,25 @@
   text-decoration: underline;
   padding-top: 35px;
 }
+
+/* responsiveness */
+@media screen and (max-width: 709px) {
+  .description {
+    display: flex;
+    flex-direction: column;
+    transition: all 0.2s ease-in-out;
+  }
+
+  .description-text2 {
+    padding-bottom: 50px;
+  }
+  .noodles-image {
+    width: 709px;
+  }
+}
+@media screen and (max-width: 1300px) {
+  .noodles-image {
+    width: 100vw;
+    height: 100vh;
+  }
+}
