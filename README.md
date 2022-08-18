@@ -13,26 +13,26 @@ EY will use this repo and code to evaluate canidates capabilities.
 
 Contributors names and contact info
 
+Madhankumar Ramu
+Solution Architect (Instructor)
+madhankumar.ramu1@ey.com
+
 Michael Hudson
 Solution Architect
 michael.hudson@ey.com
 
-Divyashree Srinivasa
-Frontend Developer (Instructor)
-divya.srinivasa@ey.com
-
 Ann Bantukul   
 ann.bantukul@ey.com
 Michael Greene
-Frontend Developer / Staff Assistant
+Frontend Developer
 michael.greene2@ey.com
 
 D'Andre Turner
-Frontend Developer / Staff Assistant
+Frontend Developer
 DAndre.Turner@ey.com
 
 Darrielle Evans
-Frontend Developer / Staff Assistant
+Frontend Developer
 darrielle.evans@ey.com
 
 Charmaine Stegall
