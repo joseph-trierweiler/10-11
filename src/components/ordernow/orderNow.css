@@ -1,0 +1,114 @@
+body, html{    
+    font-family: Inter, sans-serif;
+}
+
+#xbutton:hover{
+    color:antiquewhite
+}
+
+#xbutton{
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background-color: transparent;
+    border: none;
+}
+
+#orderButton{  
+    border-Radius: 35px;
+    font-Size: 13px;
+    border: none;
+    color: rgb(4, 4, 63);
+    padding: 7px 15px;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    font-weight: bold;
+    background-color:#FF9862;
+}
+
+#orderButton:hover{
+    opacity: 1;
+    color: white
+}
+
+.orderModal{
+    display: flex;
+    align-Items: center;
+    justify-Content: center;
+    margin: 20%  5%;
+    width: 90%;
+    border-Radius: 25px;
+    position: sticky;
+    box-Shadow: 10px 10px 30px;
+    background-color: seashell;
+}
+
+.orderModal #leftPanel{
+    width: 50%;
+    float: left;
+    height: 100%;
+    border-radius: 10px;
+    background-color: seashell;
+}
+
+.orderModal #rightPanel{
+    width: 50%;
+    background-color: seashell;
+    float: right;
+    height: 100%;
+    border-radius: 10px;
+}
+
+#buttonSection {
+    text-align: center;
+    font-size: large;
+    padding: 2px;
+    padding-top: 125px;
+}
+
+#pickup {
+      padding: 13px 45px;
+      border-radius: 25px;
+      border-width: 0px;
+      background-color: #FF9862;
+      font-weight: bold   
+    }
+
+#delivery {
+      padding: 13px 45px;
+      margin-left: 10px;
+      border-radius: 25px;
+      border-width: 0px;
+      background-color: #FF9862;
+      font-weight: bold;
+      opacity: .75;
+    }
+
+#location {
+      padding: 30px;
+      font-weight: bold;
+      font-size: 13px;
+      text-align: left;
+      padding-top: 50px;
+      padding-bottom: 100px;
+      padding-left: 150px
+    }
+
+#locationInfo {
+      padding: 0px;
+      color: gray;
+      border-width: 0px;
+      background-color: transparent;
+      text-align: left;
+      border-bottom: 1px solid;
+      padding-top: 10px;
+      padding-right: 75px;
+    }
+
+#useMyLocation{
+    font-size: 13px;
+    text-align: left;
+    padding-left: 175px;
+    font-weight: bolder;
+}

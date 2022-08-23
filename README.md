@@ -22,7 +22,13 @@ Solution Architect
 michael.hudson@ey.com
 
 Ann Bantukul   
+Staff
 ann.bantukul@ey.com
+
+Sara Wei
+Manager
+sara.wei@ey.com
+
 Michael Greene
 Frontend Developer
 michael.greene2@ey.com
