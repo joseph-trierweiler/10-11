@@ -50,11 +50,12 @@
 
 .signUpBttn {
   border: none;
-  border-radius: 20px;
+  border-radius: 30px;
   background-color: darkorange;
-  padding: 10px 35px 10px 35px;
-  margin-top: 10%;
+  padding: 15px 40px 15px 40px;
+  margin-top: 16%;
   position: fixed;
+  font-size: large;
 }
 
 .signUpContainer {
@@ -70,4 +71,16 @@
 .signUpMessage {
   position: fixed;
   margin-top: -10%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.signUpMessage h1 {
+  margin-bottom: 8%;
+  font-size: 35px;
+}
+
+.signUpMessage p {
+  font-size: 21px;
 }
