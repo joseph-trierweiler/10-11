@@ -1,4 +1,4 @@
-    .Card {
+    .card {
       background: #fbf9f2;
       display: grid;
       grid-template-rows: auto auto;
@@ -7,29 +7,29 @@
       box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
     }
     
-    .CardBox {
+    .card-box {
       padding: 15px;
       display: grid;
       grid-template-rows: 1fr 1fr 0.5fr;
     }
     
-    .CardImg {
+    .card-img {
       width: 100%;
       display: block;
       background-size: cover;
     }
   
     
-    .CardTitle {
+    .card-title {
       font-weight: bolder;
       font-size: x-large;
     }
     
-    .CardDescription{
+    .card-description{
       font-size: large;
     }
     
-    .CardPrice {
+    .card-price {
       font-weight: bold;
       font-size: small;
     }
