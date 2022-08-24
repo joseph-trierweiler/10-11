@@ -1,38 +1,50 @@
-import './navbar.css';
+import './NavBar.css';
 import { useState } from 'react';
-import Logo from './Logo.svg';
+import Logo from './logo.svg';
 
 const NavBar = () => {
-const [openMenuBar,isMenuBarOpen] = useState(false);
+const [isMenuBarOpen, setIsMenuBarOpen] = useState(false);
+const ClickMenu=()=>{setIsMenuBarOpen(!isMenuBarOpen)
 
-const dropDownMenu = () => {
-  if (openMenuBar === false) {
-    isMenuBarOpen(true);
-  } else if (openMenuBar  === true) isMenuBarOpen(false);
 }
-  return (
+
+return (
     <><nav>
-      <span id="nav-logo"><img src= {Logo} /></span>
+      <span className="nav-logo"><img src= {Logo} /></span>
 
-      <span id="nav-links-container">
-        <a class="nav-links" href="">Menu</a>
-        <a class="nav-links" href="">Rewards</a>
-        <a class="nav-links" href="">Locations</a>
-        <a class="nav-links" href="">Careers</a>
-        <a class="nav-links" href="">About Us</a>
-      </span>
+      <ul className="nav-links-container">
+        <a className="nav-links" href="">Menu</a>
+        <a className="nav-links" href="">Rewards</a>
+        <a className="nav-links" href="">Locations</a>
+        <a className="nav-links" href="">Careers</a>
+        <a className="nav-links" href="">About Us</a>
+      </ul>
+       
+        <span className="nav-menu-icon">
+        <a className="nav-menu-burger-icon" onClick={ClickMenu}
+       ></a></span>
+      
+     
+     {isMenuBarOpen===true ?
+     
+     <div className="menuItems">Menu</div> : ""
+     
 
-      <span class="nav-menu-icon">
-        <span class="nav-menu-burger-icon" onClick = {dropDownMenu}></span>
-      </span>
-
-      <span id="nav-entry">
-        <span id="nav-right"
+}
+ 
+      <span className="nav-entry">
+        <span className="nav-right"
         ><a href="">Log In</a> | <a href="">Sign Up</a>
-          <button id="nav-order-btn"><a href="">Order Now</a></button></span>
-      </span>
-    </nav><span id="dropdown-container"> </span></>
+        <button className="nav-order-btn"><a href="">Order Now</a></button></span>
+    
+    </span> 
+    
+  </nav>
+  </>
+
+     
   );
 }
+
 
 export default NavBar;
