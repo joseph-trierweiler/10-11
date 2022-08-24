@@ -2,11 +2,12 @@ body, html{
     font-family: Inter, sans-serif;
 }
 
-#xbutton:hover{
-    color:antiquewhite
+.xbutton:hover{
+    color:#FAEBD7;
+
 }
 
-#xbutton{
+.xbutton{
     position: absolute;
     top: 5px;
     right: 5px;
@@ -15,7 +16,7 @@ body, html{
 }
 
 #orderButton{  
-    border-Radius: 35px;
+    border-radius: 35px;
     font-Size: 13px;
     border: none;
     color: rgb(4, 4, 63);
@@ -25,49 +26,48 @@ body, html{
     right: 5px;
     font-weight: bold;
     background-color:#FF9862;
+    opacity: .8;
 }
 
 #orderButton:hover{
     opacity: 1;
-    color: white
+    color: #FAEBD7;
 }
 
 .orderModal{
     display: flex;
-    align-Items: center;
-    justify-Content: center;
-    margin: 20%  5%;
+    align-items: center;
+    justify-content: center;
+    margin: 5%  5%;
     width: 90%;
-    border-Radius: 25px;
     position: sticky;
-    box-Shadow: 10px 10px 30px;
-    background-color: seashell;
+    box-shadow: 10px 10px 30px;
+    background-color: #FFF5EE;
+}
+
+.panel{
+    float: left;
+    width: 50%;
 }
 
 .orderModal #leftPanel{
-    width: 50%;
-    float: left;
-    height: 100%;
     border-radius: 10px;
-    background-color: seashell;
+    background-color: #FFF5EE;
 }
 
 .orderModal #rightPanel{
-    width: 50%;
-    background-color: seashell;
-    float: right;
-    height: 100%;
+    background-color: #FFF5EE;
     border-radius: 10px;
 }
 
-#buttonSection {
+.buttonSection {
     text-align: center;
-    font-size: large;
+    font-size: 18px;
     padding: 2px;
-    padding-top: 125px;
+    padding-top: 7vw;
 }
 
-#pickup {
+.pickup {
       padding: 13px 45px;
       border-radius: 25px;
       border-width: 0px;
@@ -75,7 +75,7 @@ body, html{
       font-weight: bold   
     }
 
-#delivery {
+.delivery {
       padding: 13px 45px;
       margin-left: 10px;
       border-radius: 25px;
@@ -85,30 +85,34 @@ body, html{
       opacity: .75;
     }
 
-#location {
+.location {
       padding: 30px;
       font-weight: bold;
       font-size: 13px;
       text-align: left;
-      padding-top: 50px;
+      padding-top: 5vw;
       padding-bottom: 100px;
-      padding-left: 150px
+      padding-left: 10vw;
+      position: relative;
     }
 
-#locationInfo {
+.locationInfo {
       padding: 0px;
-      color: gray;
+      color: #808080;
       border-width: 0px;
       background-color: transparent;
       text-align: left;
       border-bottom: 1px solid;
-      padding-top: 10px;
-      padding-right: 75px;
+      padding-top: 2vw;
+      padding-right: 2vw;
+      outline: none;
     }
 
-#useMyLocation{
+ .useMyLocation{
     font-size: 13px;
     text-align: left;
-    padding-left: 175px;
+    padding-left: 10vw;
     font-weight: bolder;
+    position: relative;
+    padding-bottom: 5vw;
 }

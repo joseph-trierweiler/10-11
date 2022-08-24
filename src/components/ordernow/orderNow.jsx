@@ -1,50 +1,79 @@
-import './orderNow.css'
+import './orderNowModule.css'
 import Noodles from '../../assets/images/background_noodle.png'
 import React from "react";
-import ReactDOM from "react-dom";
+import ReactDOM from "react-dom/client";
 
-export class OrderPage extends React.Component {
-  constructor(props) {
-    super(props);
-    this.onButtonClick = this.onButtonClick.bind(this);
+const OrderButton = () => {
+  const onOrderButtonPress = () =>
+  { const root = ReactDOM.createRoot(document.getElementById('panel'))
+      root.render(<OrderPage />);
+      document.getElementById("orderButton").style.opacity = "1";
+      console.log("hi!")
   }
 
-  onButtonClick(idName) {
-    const btn = document.getElementById(idName);
+  return (
+    <button
+      id="orderButton"
+      onClick={ () => onOrderButtonPress()}
+    >
+      Order Now
+    </button>
+  );
+}
+
+export default OrderButton;
+
+
+
+
+const OrderPage =() =>{
+
+  const onButtonClick = (e) =>  {  
+    const btn = document.getElementById(e.target.id);
     const notSelected = ".75";
     const selected = "1";
     btn.style.opacity = notSelected ? selected : notSelected;
 
-    if (idName === "pickup") {
+    console.log(e.target.id)
+    if (e.target.id === "pickup") {
       document.getElementById("delivery").style.opacity = notSelected;
+      document.getElementById('labelText').innerHTML = "Pickup at location"
+      document.getElementById('inputText').placeholder = "Enter City, State, or Zip"
+
+
     } else {
       document.getElementById("pickup").style.opacity = notSelected;
+      document.getElementById('labelText').innerHTML = "Deliver to address"
+      document.getElementById('inputText').placeholder = "Please type your address"
     }
-  }
+  };
 
-  closePanel(){
-    ReactDOM.unmountComponentAtNode(document.getElementById('panel'))
-    document.getElementById("orderButton").style.opacity = ".8"
-  }
-  render() {
+  const closePanel = () =>{
+    document.getElementById('orderModal').remove();
+    // ReactDOM.unmount(document.getElementById('orderModal'));
+    document.getElementById("orderButton").style.opacity = ".8";
+  };
 
+  
     return (
-      <div class="orderModal">
-        <img alt="this is a pic" src = {Noodles} id="leftPanel"/>
-        <div id="rightPanel">
-          <button id = "xbutton" onClick={() => this.closePanel()}>x</button>
-          <div id="buttonSection">
+      <div class="orderModal" id = "orderModal">
+        <img alt="this is a pic" src = {Noodles} class="leftPanel panel"/>
+        <div class="rightPanel panel">
+          <button class = "xbutton" onClick={closePanel}>x</button>
+          <div class="buttonSection">
             <div>
               <button
                 id="pickup"
-                onClick={() => this.onButtonClick("pickup")}
+                class = "pickup"
+                onClick={e => onButtonClick(e)}
               >
                 Pickup
               </button>
 
               <button
                 id="delivery"
-                onClick={() => this.onButtonClick("delivery")}
+                class="delivery"
+                onClick={e => onButtonClick(e)}
               >
                 Delivery
               </button>
@@ -52,50 +81,20 @@ export class OrderPage extends React.Component {
             </div>
 
 
-            <div id="location">
-              <label for="locationInfo">Pickup at a location near you: </label>
+            <div class="location">
+              <label for="locationInfo" id = "labelText">Pickup at a location near you: </label>
               <br/>
               <input
-                id="locationInfo"
+                class="locationInfo"
                 type="text"
                 placeholder="Enter City, State, or Zip"
+                id = "inputText"
               />
             </div>
 
-            <div id="useMyLocation">Use My Location</div>
+            <div class="useMyLocation">Use My Location</div>
           </div>
         </div>
       </div>
     );
-  }
 }
-
-export class OrderButton extends React.Component {
-  constructor(props) {
-    super(props);
-    this.onOrderButtonPress = this.onOrderButtonPress.bind(this);
-  }
-
-  onOrderButtonPress() {
-    ReactDOM.render(<OrderPage id = "orderPage" />, document.getElementById("panel"));
-    document.getElementById("orderButton").style.opacity = "1";
-  }
-
-  render() {
-    const buttonStyle = {
-       opacity: ".8"
-    };
-
-    return (
-      <button
-        id="orderButton"
-        style = {buttonStyle}
-        onClick={this.onOrderButtonPress}
-      >
-        Order Now
-      </button>
-    );
-  }
-}
-
-ReactDOM.render(<OrderButton />, document.getElementById("root"));
