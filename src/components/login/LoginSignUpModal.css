@@ -11,7 +11,7 @@
 }
 
 .closeModalBtn {
-  color: white;
+  color: #ffffff;
   background-color: transparent;
   border: none;
   font-size: 25px;
@@ -51,7 +51,7 @@
 .signUpBttn {
   border: none;
   border-radius: 30px;
-  background-color: darkorange;
+  background-color: #8b4000;
   padding: 15px 40px 15px 40px;
   margin-top: 16%;
   position: fixed;
