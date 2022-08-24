@@ -8,7 +8,6 @@ const OrderButton = () => {
   { const root = ReactDOM.createRoot(document.getElementById('panel'))
       root.render(<OrderPage />);
       document.getElementById("orderButton").style.opacity = "1";
-      console.log("hi!")
   }
 
   return (
@@ -34,7 +33,6 @@ const OrderPage =() =>{
     const selected = "1";
     btn.style.opacity = notSelected ? selected : notSelected;
 
-    console.log(e.target.id)
     if (e.target.id === "pickup") {
       document.getElementById("delivery").style.opacity = notSelected;
       document.getElementById('labelText').innerHTML = "Pickup at location"
