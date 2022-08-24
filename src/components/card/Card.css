@@ -1,0 +1,48 @@
+.SectionTitle{
+    text-align: center;
+    grid-column: 1/-1;
+    font-size: 3rem;
+    font-weight: bold;
+    font-family: "Inter", sans-serif;
+    text-transform: capitalize;
+  }
+  .Cards{
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      grid-gap: 3em;
+      padding-bottom: 50px;
+      max-height: 70%;
+    }
+    .Card {
+      background: #fbf9f2;
+      display: grid;
+      grid-template-rows: auto auto;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    }
+    
+    .CardBox {
+      padding: 15px;
+      display: grid;
+      grid-template-rows: 1fr 1fr 0.5fr;
+    }
+    
+    .CardImg {
+      width: 100%;
+      display: block;
+      background-size: cover;
+    }
+  
+    
+    .CardTitle {
+      font-weight: bolder;
+      font-size: x-large;
+    }
+    
+    .CardDescription{
+      font-size: large;
+    }
+    
+    .CardPrice {
+      font-weight: bold;
+      font-size: small;
+    }
