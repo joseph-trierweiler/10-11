@@ -15,7 +15,7 @@ body, html{
     border: none;
 }
 
-#orderButton{  
+.orderButton{  
     border-radius: 35px;
     font-Size: 13px;
     border: none;
@@ -27,9 +27,10 @@ body, html{
     font-weight: bold;
     background-color:#FF9862;
     opacity: .8;
+    
 }
 
-#orderButton:hover{
+.orderButton:hover{
     opacity: 1;
     color: #FAEBD7;
 }
@@ -48,16 +49,7 @@ body, html{
 .panel{
     float: left;
     width: 50%;
-}
-
-.orderModal #leftPanel{
-    border-radius: 10px;
     background-color: #FFF5EE;
-}
-
-.orderModal #rightPanel{
-    background-color: #FFF5EE;
-    border-radius: 10px;
 }
 
 .buttonSection {
@@ -82,7 +74,6 @@ body, html{
       border-width: 0px;
       background-color: #FF9862;
       font-weight: bold;
-      opacity: .75;
     }
 
 .location {
