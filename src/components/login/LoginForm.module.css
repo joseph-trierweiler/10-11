@@ -1,0 +1,45 @@
+.loginBtn {
+  border: none;
+  border-radius: 20px;
+  background-color: #d3d3d3;
+  color: #828282;
+  padding: 15px 35px;
+  width: 100%;
+}
+
+.loginBtnContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: scroll;
+}
+
+.loginForm {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 2;
+}
+
+.loginFormContainer {
+  display: flex;
+  flex: 1;
+  margin-top: 10%;
+  width: 50%;
+  position: static;
+}
+
+.loginForm input {
+  border: none;
+  border-bottom: 0.5px solid #000000;
+  background: none;
+  margin-bottom: 15%;
+}
+
+.loginForm input:focus {
+  outline: 0px;
+}
+
+.loginForm label {
+  margin-bottom: 7%;
+}
