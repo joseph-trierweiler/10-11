@@ -1,4 +1,4 @@
-import './NavBar.css';
+import navBarStyles from './navBarStyles.module.css'
 import { MenuItems } from './MenuItems';
 import { useState } from 'react';
 import Logo from './logo.svg';
@@ -11,37 +11,37 @@ const ClickMenu=()=>{setIsMenuBarOpen(!isMenuBarOpen)
 
 return (
     <><nav>
-      <span className="nav-logo"><img src= {Logo} /></span>
+      <span className={navBarStyles.navlogo}><img src= {Logo} /></span>
 
-      <ul className="nav-links-container">
+      <ul className={navBarStyles.navLinksContainer}>
         {MenuItems.map((item, index) => {
             return(
-              <ul key={index}>
+              <li className={navBarStyles.list} key={index}>
                 <a className={item.cName} href={item.url}>
                 {item.title}
                 </a>
-              </ul>
+              </li>
             )
         })}
       </ul>
        
-        <span className="nav-menu-icon">
-        <a className="nav-menu-burger-icon" onClick={ClickMenu}
+        <span className={navBarStyles.navMenuIcon}>
+        <a className={navBarStyles.navMenuBurgerIcon} onClick={ClickMenu}
        ></a></span>
       
      
-     {isMenuBarOpen===true ?
+     {isMenuBarOpen ?
      
-     <div className="menuItems">Menu</div> : ""
+     <div className={navBarStyles.menuItems}>Menu</div> : ""
      
 
 }
  
-      <span className="nav-entry">
-        <span className="nav-right"
+      <span className={navBarStyles.navEntry}>
+        <span className={navBarStyles.navRight}
         ><a href="">Log In</a> | <a href="">Sign Up</a>
-        <button className="nav-order-btn"><a href="">Order Now</a></button></span>
-    
+        <button className={navBarStyles.navOrderBtn}><a href="">Order Now</a></button></span>
+        <span className={navBarStyles.dropdownContainer}> </span>
     </span> 
     
   </nav>

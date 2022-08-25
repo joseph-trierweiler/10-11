@@ -26,28 +26,28 @@
     margin-bottom: 10px;
   }
   
-  .nav-entry {
+  .navEntry {
     flex: 1;
     display: flex;
+    
   }
   
-  
-  .nav-links-container {
+  .navLinksContainer {
     display: flex;
     flex: 1;
     flex-wrap: wrap;
     gap: 10%;
   }
-
+  
   .list{
     list-style-type: none;
   }
-  
-  .nav-logo {
+
+  .navlogo {
     margin-right: 4%;
   }
   
-  .nav-order-btn {
+  .navOrderBtn {
     background-color: #FF8C00;
     padding: 10px;
     border-radius: 20px;
@@ -56,19 +56,19 @@
     margin-left: 15px;
   }
   
-  .nav-right {
+  .navRight {
     margin-left: auto;
     white-space: nowrap;
   }
   
   @media screen and (min-width: 710px) {
-    #dropdown-container {
+    .dropdownContainer {
       display: none;
     }
   }
   
   @media screen and (max-width: 709px) {
-    .nav-menu-icon {
+    .navMenuIcon {
       position: relative;
       display: flex;
       flex: 1;
@@ -79,7 +79,7 @@
       cursor: pointer;
     }
   
-    .nav-menu-burger-icon {
+    .navMenuBurgerIcon {
       width: 35px;
       height: 5px;
       background: #FF8C00;
@@ -88,8 +88,8 @@
       transition: all 0.2s ease-in-out;
     }
   
-    .nav-menu-burger-icon::before,
-    .nav-menu-burger-icon::after {
+    .navMenuBurgerIcon::before,
+    .navMenuBurgerIcon::after {
       content: "";
       position: absolute;
       width: 35px;
@@ -100,41 +100,41 @@
       transition: all 0.2s ease-in-out;
     }
   
-    .nav-menu-burger-icon::before {
+    .navMenuBurgerIcon::before {
       transform: translateY(-10px);
     }
   
-    .nav-menu-burger-icon::after {
+    .navMenuBurgerIcon::after {
       transform: translateY(10px);
     }
   
-    .nav-links-container {
+    .navLinksContainer {
       display: none;
     }
   
-    .nav-links-hamburger-container div {
+    .navLinksHamburgerContainer div {
       margin: 2%;
     }
   
-    .nav-menu-icon.open .nav-menu-burger-icon {
+    .navMenuIcon.open .navMenuBurgerIcon {
       transform: translateX(-50px);
       background: transparent;
       box-shadow: none;
     }
   
-    .nav-menu-icon.open .nav-menu-burger-icon::before {
+    .navMenuIcon.open .navMenuBurgerIcon::before {
       transform: rotate(45deg) translate(35px, -35px);
     }
   
-    .nav-menu-icon.open .nav-menu-burger-icon::after {
+    .navMenuIcon.open .navMenuBurgerIcon::after {
       transform: rotate(-45deg) translate(35px, 35px);
     }
   
-    .nav-entry {
+    .navEntry {
       display: none;
     }
   
-    .nav-order-btn-dropdown {
+    .navOrderBtnDropdown {
       background-color: #FF8C00;
       padding: 10px;
       border-radius: 20px;
@@ -142,7 +142,7 @@
       align-self: center;
     }
   
-    .nav-links-container-dropdown {
+    .navLinksContainerDropdown {
       background-color: #d3cbcb90;
       padding: 5px 0 5% 0;
       text-align: center;
