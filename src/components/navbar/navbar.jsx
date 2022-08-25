@@ -1,4 +1,5 @@
 import './NavBar.css';
+import { MenuItems } from './MenuItems';
 import { useState } from 'react';
 import Logo from './logo.svg';
 
@@ -13,11 +14,15 @@ return (
       <span className="nav-logo"><img src= {Logo} /></span>
 
       <ul className="nav-links-container">
-        <a className="nav-links" href="">Menu</a>
-        <a className="nav-links" href="">Rewards</a>
-        <a className="nav-links" href="">Locations</a>
-        <a className="nav-links" href="">Careers</a>
-        <a className="nav-links" href="">About Us</a>
+        {MenuItems.map((item, index) => {
+            return(
+              <ul key={index}>
+                <a className={item.cName} href={item.url}>
+                {item.title}
+                </a>
+              </ul>
+            )
+        })}
       </ul>
        
         <span className="nav-menu-icon">
