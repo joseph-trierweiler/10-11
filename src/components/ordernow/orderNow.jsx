@@ -5,14 +5,12 @@ import ReactDOM from "react-dom/client";
 
 const OrderButton = () => {
   const[ showing, setShowing] = useState(false);
-  const[isActive, setActive] = useState(.8);
   
   const onOrderButtonPress = () =>
   { 
     const root = ReactDOM.createRoot(document.getElementById('panel'))
     const menu = showing ? <OrderPage /> : null
     root.render(menu)
-    //   document.getElementById("orderButton").style.opacity = "1";
   }
 
   return (
@@ -34,19 +32,13 @@ export default OrderButton;
 const OrderPage = () =>{
   const [label, setLabel] = useState("Pickup at a location near you")
   const [input, setInput] = useState("Enter City, State, or Zip")
-  const isShowing = true;
 
-
-  const closePanel = () =>{
-    document.getElementById('orderModal').remove();
-  };
 
   
     return (
-      <div className={styles.orderModal} id = "orderModal">
+      <div className={styles.orderModal}>
         <img alt="this is a pic" src = {Noodles} className={styles.panel}/>
         <div className = {styles.panel}>
-          {/* <button className = {styles.xbutton} onClick={closePanel}>x</button> */}
           <div className= {styles.buttonSection}>
             <div>
               <button
