@@ -1,19 +1,19 @@
-import React from "react";
-import "./LoginForm.css";
+import React from 'react';
+import styles from './LoginForm.module.css';
 
 const LoginForm = () => {
   return (
-    <div className="loginFormContainer">
-      <form className="loginForm">
+    <div className={styles.loginFormContainer}>
+      <form className={styles.loginForm}>
         <label>Email</label>
         <input type="email"></input>
         <label>Password</label>
         <input type="password"></input>
-        <div className="loginBttnContainer">
-          <button className="loginBttn">Log In</button>
+        <div className={styles.loginBtnContainer}>
+          <button className={styles.loginBtn}>Log In</button>
           <p>
-            <a href="">Forget Password</a> Don't have an account?
-            <a href="">Sign up</a>
+            <a href="#">Forget Password</a> Don't have an account?
+            <a href="#">Sign up</a>
           </p>
         </div>
       </form>
