@@ -1,6 +1,7 @@
 import navBarStyles from './navBarStyles.module.css'
 import { MenuItems } from './MenuItems';
 import { useState } from 'react';
+import { Link, useMatch, useResolvedPath } from "react-router-dom";
 import Logo from './logo.svg';
 
 const NavBar = () => {
@@ -32,10 +33,8 @@ return (
      
      {isMenuBarOpen ?
      
-     <div className={navBarStyles.menuItems}>Menu</div> : ""
-     
-
-}
+     <div className={navBarStyles.menuItems}></div> : ""
+     }
  
       <span className={navBarStyles.navEntry}>
         <span className={navBarStyles.navRight}
