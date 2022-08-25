@@ -9,16 +9,7 @@ function App() {
     setIsModalOpen(true);
   };
 
-  return (
-    <div className="App" data-testId="App">
-      {!isModalOpen && (
-        <button className="openLoginSignUpModal" onClick={modalHandler}>
-          LogIn | Sign Up
-        </button>
-      )}
-      {isModalOpen && <LoginSignUpModal isModalClosed={setIsModalOpen} />}
-    </div>
-  );
+  return <div className="App">hey</div>;
 }
 
 export default App;
