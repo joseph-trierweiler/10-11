@@ -1,0 +1,43 @@
+.rewardsContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #fbf9f2;
+    border: solid red 1px;
+}
+
+.rewardsTextContainer {
+    border: solid red 1px;
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.rewardsText {
+    border: solid red 1px;
+    margin: 50px;
+}
+
+.rewardsTitle {
+    font-size: 25px;
+    font-weight: 300;
+}
+
+.rewardsHeading {
+    width: 325px;
+    word-wrap: break-word;
+}
+
+.rewardsImgContainer {
+    border: solid green 1px;
+    width: 55%;
+
+}
+
+.rewardsImg {
+    border: solid blue 1px;
+    width: 100%;
+
+}
