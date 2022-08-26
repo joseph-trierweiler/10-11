@@ -5,16 +5,11 @@ import React, {useState} from "react";
 const OrderButton = () => {
   const[ showing, setShowing] = useState(false);
   
-  const onOrderButtonPress = () =>
-  { 
-    setShowing(!showing)
-  }
-
   return (
     <>
     <button
       className = {styles.orderButton}
-      onClick={ () => {setShowing(!showing); onOrderButtonPress()}}
+      onClick={ () => {setShowing(!showing)}}
     >
       Order Now
     </button>
