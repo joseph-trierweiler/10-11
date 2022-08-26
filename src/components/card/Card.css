@@ -2,7 +2,6 @@
       background: #fbf9f2;
       display: grid;
       grid-template-rows: auto auto;
-      max-width: 350px;
       margin: 25px;
       box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
     }
@@ -18,8 +17,7 @@
       display: block;
       background-size: cover;
     }
-  
-    
+      
     .card-title {
       font-weight: bolder;
       font-size: x-large;

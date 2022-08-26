@@ -5,9 +5,9 @@ This repo will host the code used for this learning path.
 
 ## Description
 
-In this repo you will be creating code for the Front End Learning path User Interfaces. 
+In this repo you will be creating code for the Front End Learning path User Interfaces.
 
-EY will use this repo and code to evaluate canidates capabilities. 
+EY will use this repo and code to evaluate canidates capabilities.
 
 ## Authors
 
@@ -21,7 +21,7 @@ Michael Hudson
 Solution Architect
 michael.hudson@ey.com
 
-Ann Bantukul   
+Ann Bantukul  
 Staff
 ann.bantukul@ey.com
 
