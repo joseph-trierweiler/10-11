@@ -21,12 +21,7 @@ Michael Hudson
 Solution Architect
 michael.hudson@ey.com
 
-<<<<<<< HEAD
 Ann Bantukul  
-ann.bantukul@ey.com
-
-=======
-Ann Bantukul   
 Staff
 ann.bantukul@ey.com
 
@@ -34,7 +29,6 @@ Sara Wei
 Manager
 sara.wei@ey.com
 
->>>>>>> 941b53795f69b9a75c79678601ef6d623f49cb11
 Michael Greene
 Frontend Developer
 michael.greene2@ey.com
@@ -50,7 +44,3 @@ darrielle.evans@ey.com
 Charmaine Stegall
 Frontend Developer
 charmaine.stegall@ey.com
-
-Sara Wei
-S.T.B Developer
-Sara.Wei@ey.com
