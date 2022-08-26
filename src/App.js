@@ -5,7 +5,7 @@ import RewardsPage from './components/rewards/rewards';
 function App() {
   return (
     <div className="App">
-        <RewardsPage/>
+      hey
     </div>
   );
 }
