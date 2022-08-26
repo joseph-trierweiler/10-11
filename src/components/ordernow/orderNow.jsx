@@ -1,26 +1,28 @@
 import styles from './ordernow.module.css'
 import Noodles from '../../assets/images/background_noodle.png'
 import React, {useState} from "react";
-import ReactDOM from "react-dom/client";
 
 const OrderButton = () => {
   const[ showing, setShowing] = useState(false);
   
   const onOrderButtonPress = () =>
   { 
-    const root = ReactDOM.createRoot(document.getElementById('panel'))
-    const menu = showing ? <OrderPage /> : null
-    root.render(menu)
+    setShowing(!showing)
   }
 
   return (
+    <>
     <button
-      id="orderButton"
       className = {styles.orderButton}
       onClick={ () => {setShowing(!showing); onOrderButtonPress()}}
     >
       Order Now
     </button>
+    
+    <div>
+      {showing ? <OrderPage /> : null}
+    </div>
+    </>
   );
 }
 
@@ -42,7 +44,6 @@ const OrderPage = () =>{
           <div className= {styles.buttonSection}>
             <div>
               <button
-                id="pickup"
                 className = {styles.pickup}
                 onClick={() => {setLabel("Pickup at a location near you:"); setInput("Enter City, State, or Zip")}}
               >
@@ -50,7 +51,6 @@ const OrderPage = () =>{
               </button>
 
               <button
-                id="delivery"
                 className= {styles.delivery}
                 onClick={() => {setLabel("Please type your address:"); setInput("Enter Your Address")}}
               >
@@ -61,7 +61,7 @@ const OrderPage = () =>{
 
 
             <div className={styles.location}>
-              <label for="locationInfo" id = "labelText">{label}</label>
+              <label for="locationInfo" >{label}</label>
               <br/>
               <input
                 className={styles.locationInfo}
@@ -69,9 +69,10 @@ const OrderPage = () =>{
                 placeholder= {input}
                 id = "inputText"
               />
+              <br/>
+              <button className={styles.useMyLocation} 
+              onClick={() => setInput("401 9th Ave, New York, NY 10001")}> 📍 Use My Location</button>
             </div>
-
-            <div className={styles.useMyLocation}>Use My Location</div>
           </div>
         </div>
       </div>

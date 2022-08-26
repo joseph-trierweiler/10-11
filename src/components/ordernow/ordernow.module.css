@@ -62,8 +62,14 @@ body, html{
       border-radius: 25px;
       border-width: 0px;
       background-color: #FF9862;
-      font-weight: bold   
+      font-weight: bold;
+      opacity: .8; 
     }
+
+.pickup:hover{
+    opacity: 1;
+    color: #FFFFFF;
+}
 
 .delivery {
       padding: 13px 45px;
@@ -72,14 +78,20 @@ body, html{
       border-width: 0px;
       background-color: #FF9862;
       font-weight: bold;
+      opacity: .8;
     }
+
+.delivery:hover{
+    opacity: 1;
+    color: #FFFFFF;
+}
 
 .location {
       padding: 30px;
       font-weight: bold;
       font-size: 13px;
       text-align: left;
-      padding-top: 5vw;
+      padding-top: 8vh;
       padding-bottom: 100px;
       padding-left: 10vw;
       position: relative;
@@ -92,16 +104,25 @@ body, html{
       background-color: transparent;
       text-align: left;
       border-bottom: 1px solid;
-      padding-top: 2vw;
-      padding-right: 2vw;
+      padding-top: 1vh;
+      padding-right: 5vw;
       outline: none;
     }
 
  .useMyLocation{
     font-size: 13px;
     text-align: left;
-    padding-left: 10vw;
-    font-weight: bolder;
     position: relative;
-    padding-bottom: 5vw;
+    padding-bottom: 5vh;
+    font-weight: 300;
+    color:#191970; 
+    outline: none;
+    border-width: 0px;
+    background-color: transparent;
+    padding-top: 10vh;
+}
+
+.useMyLocation:hover{
+    font-weight: 600;
+    text-decoration: underline;
 }
