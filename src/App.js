@@ -1,5 +1,4 @@
 import './App.css';
-import RewardsPage from './components/rewards/rewards';
 
 
 function App() {
