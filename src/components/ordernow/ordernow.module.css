@@ -1,0 +1,138 @@
+.xbutton:hover{
+    color:#FAEBD7;
+    font-family: Inter, sans-serif;
+}
+
+.xbutton{
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background-color: transparent;
+    border: none;
+    font-family: Inter, sans-serif;
+}
+
+.orderButton{  
+    border-radius: 35px;
+    font-Size: 13px;
+    border: none;
+    color: rgb(4, 4, 63);
+    padding: 7px 15px;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    font-weight: bold;
+    background-color:#FF9862;
+    font-family: Inter, sans-serif;
+}
+
+.orderButton:hover{
+    opacity: 1;
+    color: #FAEBD7;
+    font-family: Inter, sans-serif;
+}
+
+.orderModal{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5%  5%;
+    width: 90%;
+    position: sticky;
+    box-shadow: 10px 10px 30px;
+    background-color: #FFF5EE;
+    font-family: Inter, sans-serif;
+}
+
+.panel{
+    float: left;
+    width: 50%;
+    background-color: #FFF5EE;
+    font-family: Inter, sans-serif;
+}
+
+.buttonSection {
+    text-align: center;
+    font-size: 18px;
+    padding: 2px;
+    padding-top: 7vw;
+    font-family: Inter, sans-serif;
+}
+
+.pickup {
+      padding: 13px 45px;
+      border-radius: 25px;
+      border-width: 0px;
+      background-color: #FF9862;
+      font-weight: bold;
+      opacity: .8; 
+      font-family: Inter, sans-serif;
+    }
+
+.pickup:hover{
+    opacity: 1;
+    color: #FFFFFF;
+    font-family: Inter, sans-serif;
+}
+
+.delivery {
+      padding: 13px 45px;
+      margin-left: 10px;
+      border-radius: 25px;
+      border-width: 0px;
+      background-color: #FF9862;
+      font-weight: bold;
+      opacity: .8;
+      font-family: Inter, sans-serif;
+    }
+
+.delivery:hover{
+    opacity: 1;
+    color: #FFFFFF;
+    font-family: Inter, sans-serif;
+}
+
+.location {
+      padding: 30px;
+      font-weight: bold;
+      font-size: 13px;
+      text-align: left;
+      padding-top: 8vh;
+      padding-bottom: 100px;
+      padding-left: 10vw;
+      position: relative;
+      font-family: Inter, sans-serif;
+    }
+
+.locationInfo {
+      padding: 0px;
+      color: #808080;
+      border-width: 0px;
+      background-color: transparent;
+      text-align: left;
+      border-bottom: 1px solid;
+      padding-top: 1vh;
+      padding-right: 5vw;
+      outline: none;
+      font-family: Inter, sans-serif;
+    }
+
+ .useMyLocation{
+    font-size: 13px;
+    text-align: left;
+    position: relative;
+    padding-bottom: 5vh;
+    font-weight: 300;
+    color:#191970; 
+    outline: none;
+    border-width: 0px;
+    background-color: transparent;
+    padding-top: 10vh;
+    font-family: Inter, sans-serif;
+}
+
+.useMyLocation:hover{
+    font-weight: 600;
+    text-decoration: underline;
+    font-family: Inter, sans-serif;
+}
