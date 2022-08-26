@@ -1,0 +1,46 @@
+{"appetizer":[
+    {
+        "id":1,
+        "title": "Takoyaki",
+        "image": "../images/Takoyaki.png",
+        "description": "Takoyaki sauce, mayonnaise, seaweed, and bonito flakes",
+        "price": "$8.75"
+    },
+    {   
+        "id":2,
+        "title": "Edamame",
+        "image": "../images/Edamame.png",
+        "description": "steamed to order, tossed with kosher salt",
+        "price": "$6.75"
+    },
+    {   
+        "id":3,
+        "title": "Corn Tempura",
+        "image": "../images/Corn.png",
+        "description": "sweet corn made with our tempura batter sprinkled with matcha sea salt",
+        "price": "$8.00"
+    }
+],
+"Udon":[
+    {
+        "id":4,
+        "title": "Tonkatsu Udon",
+        "image": "../images/Udon1.png",
+        "description": "pork & fish broth, 2 pc shrimp tempura, egg, garlic, green onions, boiled spinach, fish powder, tempura bits",
+        "price": "$8.75"
+    },
+    {   
+        "id":5,
+        "title": "Salmon Spinach Cream Udon",
+        "image": "../images/Udon2.png",
+        "description": "spinach cream sauce, raw smoked salmon, parmesan cheese, green onions, kaiware sprouts, tempura bits, nori seaweed",
+        "price": "$8.75"
+    },
+    {   
+        "id":6,
+        "title": "Spicy Niku Bukkake Udon",
+        "image": "../images/Udon3.png",
+        "description": "niku bukkake udon with spicy chili oil (garlic, onions)",
+        "price": "$8.75"
+    }
+]}
