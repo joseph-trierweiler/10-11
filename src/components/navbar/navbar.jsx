@@ -75,7 +75,7 @@ const NavBar = () => {
         <span className={navBarStyles.navEntry}>
           <span className={navBarStyles.navRight}>
             <button
-              className={navBarStyles.navOrderBtn}
+              className={navBarStyles.navLoginBtn}
               onClick={() => setIsLoginModalOpen(!isLoginModalOpen)}
             >
               Log In | Sign Up
