@@ -1,10 +1,9 @@
- /* * {
+ * {
     margin: 0;
     padding: 0;
     text-decoration: none;
-    white-space: nowrap;
-    font-family: "Inter";
-  }    */
+    font-family: "Inter"; 
+  }     
   
   
   a:visited {
@@ -21,12 +20,12 @@
     background-color: #fbf9f2;
     height: 50px;
     margin-bottom: 10px;
+    white-space: nowrap; 
   }
   
   .navEntry {
     flex: 1;
     display: flex;
-    
   }
   
   .navLinksContainer {
@@ -34,6 +33,7 @@
     flex: 1;
     flex-wrap: wrap;
     gap: 10%;
+  
   }
   
   .list{
