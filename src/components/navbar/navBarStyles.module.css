@@ -52,6 +52,16 @@ nav {
   margin-left: 15px;
 }
 
+.navLoginBtn {
+  background-color: #23314e;
+  color: #ff8c00;
+  padding: 10px;
+  border-radius: 20px;
+  border: none;
+  align-self: center;
+  margin-left: 15px;
+}
+
 .navRight {
   margin-left: auto;
   white-space: nowrap;
