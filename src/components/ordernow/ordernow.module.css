@@ -138,3 +138,12 @@
   text-decoration: underline;
   font-family: Inter, sans-serif;
 }
+
+.closeModalBtn {
+  color: #000000;
+  background-color: transparent;
+  border: none;
+  font-size: 25px;
+  margin-right: auto;
+  margin-bottom: auto;
+}
