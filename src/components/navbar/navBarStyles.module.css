@@ -1,10 +1,13 @@
-/* * {
-    margin: 0;
-    padding: 0;
-    text-decoration: none;
-    white-space: nowrap;
-    font-family: "Inter";
-  }    */
+* {
+  /* margin: 0;
+  padding: 0; */
+  text-decoration: none;
+  font-family: 'Inter';
+}
+
+a:visited {
+  color: inherit;
+}
 
 a:visited {
   color: inherit;
@@ -67,6 +70,29 @@ nav {
     flex: 1;
     justify-content: end;
     align-items: center;
+    border-top: 5px solid #ff8c00;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.2);
+    padding: 5px 15px;
+    background-color: #fbf9f2;
+    height: 50px;
+    margin-bottom: 10px;
+    white-space: nowrap;
+  }
+
+  .navEntry {
+    flex: 1;
+    display: flex;
+  }
+
+  .navLinksContainer {
+    display: flex;
+    flex: 1;
+    flex-wrap: wrap;
+    gap: 10%;
+  }
+
+  .list {
+    list-style-type: none;
     box-sizing: border-box;
     transition: all 0.5s ease-in-out;
     cursor: pointer;
