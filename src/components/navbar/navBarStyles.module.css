@@ -1,149 +1,175 @@
- * {
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  font-family: 'Inter';
+}
+
+a:visited {
+  color: inherit;
+  /* * {
     margin: 0;
     padding: 0;
     text-decoration: none;
-    font-family: "Inter"; 
-  }     
-  
-  
-  a:visited {
-    color: inherit;
+    /* white-space: nowrap; */
+  /* font-family: "Inter"; */
+}
+
+a:visited {
+  color: inherit;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  border-top: 5px solid #ff8c00;
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.2);
+  padding: 5px 15px;
+  background-color: #fbf9f2;
+  height: 50px;
+}
+
+.navEntry {
+  flex: 1;
+  display: flex;
+}
+
+.navLinksContainer {
+  display: flex;
+  flex: 1;
+  flex-wrap: wrap;
+  gap: 10%;
+}
+
+.list {
+  list-style-type: none;
+}
+
+.navlogo {
+  margin-right: 4%;
+}
+
+.navOrderBtn {
+  background-color: #ff8c00;
+  padding: 10px;
+  border-radius: 20px;
+  border: none;
+  align-self: center;
+  margin-left: 15px;
+}
+
+.navRight {
+  margin-left: auto;
+  white-space: nowrap;
+}
+
+@media screen and (min-width: 710px) {
+  .dropdownContainer {
+    display: none;
   }
-  
-  
-  nav {
+}
+
+@media screen and (max-width: 709px) {
+  .navMenuIcon {
+    position: relative;
     display: flex;
+    flex: 1;
+    justify-content: end;
     align-items: center;
-    border-top: 5px solid #FF8C00;
+    border-top: 5px solid #ff8c00;
     box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.2);
     padding: 5px 15px;
     background-color: #fbf9f2;
     height: 50px;
     margin-bottom: 10px;
-    white-space: nowrap; 
+    white-space: nowrap;
   }
-  
+
   .navEntry {
     flex: 1;
     display: flex;
   }
-  
+
   .navLinksContainer {
     display: flex;
     flex: 1;
     flex-wrap: wrap;
     gap: 10%;
-  
-  }
-  
-  .list{
-    list-style-type: none;
   }
 
-  .navlogo {
-    margin-right: 4%;
+  .list {
+    list-style-type: none;
+    box-sizing: border-box;
+    transition: all 0.5s ease-in-out;
+    cursor: pointer;
   }
-  
-  .navOrderBtn {
-    background-color: #FF8C00;
+
+  .navMenuBurgerIcon {
+    width: 35px;
+    height: 5px;
+    background: #ff8c00;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: all 0.2s ease-in-out;
+  }
+
+  .navMenuBurgerIcon::before,
+  .navMenuBurgerIcon::after {
+    content: '';
+    position: absolute;
+    width: 35px;
+    height: 5px;
+    background: #ff8c00;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: all 0.2s ease-in-out;
+  }
+
+  .navMenuBurgerIcon::before {
+    transform: translateY(-10px);
+  }
+
+  .navMenuBurgerIcon::after {
+    transform: translateY(10px);
+  }
+
+  .navLinksContainer {
+    display: none;
+  }
+
+  .navLinksHamburgerContainer div {
+    margin: 2%;
+  }
+
+  .navMenuIcon.open .navMenuBurgerIcon {
+    transform: translateX(-50px);
+    background: transparent;
+    box-shadow: none;
+  }
+
+  .navMenuIcon.open .navMenuBurgerIcon::before {
+    transform: rotate(45deg) translate(35px, -35px);
+  }
+
+  .navMenuIcon.open .navMenuBurgerIcon::after {
+    transform: rotate(-45deg) translate(35px, 35px);
+  }
+
+  .navEntry {
+    display: none;
+  }
+
+  .navOrderBtnDropdown {
+    background-color: #ff8c00;
     padding: 10px;
     border-radius: 20px;
     border: none;
     align-self: center;
-    margin-left: 15px;
   }
-  
-  .navRight {
-    margin-left: auto;
-    white-space: nowrap;
+
+  .navLinksContainerDropdown {
+    background-color: #d3cbcb90;
+    padding: 5px 0 5% 0;
+    text-align: center;
   }
-  
-  @media screen and (min-width: 710px) {
-    .dropdownContainer {
-      display: none;
-    }
-  }
-  
-  @media screen and (max-width: 709px) {
-    .navMenuIcon {
-      position: relative;
-      display: flex;
-      flex: 1;
-      justify-content: end;
-      align-items: center;
-      box-sizing: border-box;
-      transition: all 0.5s ease-in-out;
-      cursor: pointer;
-    }
-  
-    .navMenuBurgerIcon {
-      width: 35px;
-      height: 5px;
-      background: #FF8C00;
-      border-radius: 5px;
-      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-      transition: all 0.2s ease-in-out;
-    }
-  
-    .navMenuBurgerIcon::before,
-    .navMenuBurgerIcon::after {
-      content: "";
-      position: absolute;
-      width: 35px;
-      height: 5px;
-      background: #FF8C00;
-      border-radius: 5px;
-      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-      transition: all 0.2s ease-in-out;
-    }
-  
-    .navMenuBurgerIcon::before {
-      transform: translateY(-10px);
-    }
-  
-    .navMenuBurgerIcon::after {
-      transform: translateY(10px);
-    }
-  
-    .navLinksContainer {
-      display: none;
-    }
-  
-    .navLinksHamburgerContainer div {
-      margin: 2%;
-    }
-  
-    .navMenuIcon.open .navMenuBurgerIcon {
-      transform: translateX(-50px);
-      background: transparent;
-      box-shadow: none;
-    }
-  
-    .navMenuIcon.open .navMenuBurgerIcon::before {
-      transform: rotate(45deg) translate(35px, -35px);
-    }
-  
-    .navMenuIcon.open .navMenuBurgerIcon::after {
-      transform: rotate(-45deg) translate(35px, 35px);
-    }
-  
-    .navEntry {
-      display: none;
-    }
-  
-    .navOrderBtnDropdown {
-      background-color: #FF8C00;
-      padding: 10px;
-      border-radius: 20px;
-      border: none;
-      align-self: center;
-    }
-  
-    .navLinksContainerDropdown {
-      background-color: #d3cbcb90;
-      padding: 5px 0 5% 0;
-      text-align: center;
-    }
-  }
-  
-   
+}
